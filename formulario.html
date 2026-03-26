@@ -1,40 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Formulario</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="estilos.css">
-        
-    </head>
-    <body class="formulario-body">
-     <img src="img/foto1.jpg" alt="Imagen de fondo" class="imagen-fondo">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Técnico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
+<body>
 
-  <form action="guardar.php" method="post" enctype="multipart/form-data">
-    <div class="galeria1">
-    <img src="img/imagen.jpg" alt="Imagen de ejemplo" width="300px" height="200px"> 
-    </div>
-    <br>
-  <label>Nombre completo</label>
-  <br>
-  <select id="Nombre" name="Nombre" id="Nombre" required>
-      <option value=""></option>
-      <option value="Estefan Contreras"> Estefan Contreras Rodriguez </option>
-      <option value="Luna Montoya">Luna Montoya Gomez</option>
-      <option value="Anthony Contreras">Anthony Felipe Contreras</option>
-      <option value="Yuri Gomez">Yuri Paola Gomez</option>
-    </select>
-  <br><br>
-  <label>Documento de identidad</label><br>
-  <input type="number"> <br><br>
-  <label>Tipo de archivo</label><br>
-  <input type="text" name="Correo"><br><br>
-  <label>Subir archivo PDF:</label>
-  <div class="centrado">
-    <input type="file" name="archivo" accept="application/pdf" required>
-  </div><br>
-  <div><input type="submit" value="Enviar"></div>
-  </form>
-  <body>
-<html>
-  
+<div class="container">
+    <h2>Registro de Material Técnico</h2>
+
+    <form action="https://formspree.io/f/mbdpljzo" method="POST">
+      
+        <label>NOMBRE TÉCNICO:</label>
+        <input type="text" name="Nombre" required>
+
+        <label>NIE:</label>
+        <input type="number" name="Nie" required>
+
+        <label>MATERIAL:</label>
+        <input type="text" name="Material" required>
+
+        <label>MENSAJE:</label>
+        <textarea name="mensaje" rows="4"></textarea>
+
+        <button type="submit">Enviar Registro</button>
+
+    </form>
+</div>
+
+</body>
+</html>
